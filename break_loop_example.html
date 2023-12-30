@@ -1,0 +1,16 @@
+<!-- the loop below asks the user for a series of numbers, “breaking” when no number is entered -->
+
+<!DOCKTYPE html>
+<script>
+    'use strict';
+let sum = 0;
+while(true){
+    let value = +prompt("Enter a value : " , '');
+    if (!value){
+        break;
+        sum += value;
+    }
+}
+alert("Sum : " + sum);
+
+</script>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<script>
+    'use strict';
+    let arg = prompt( "Enter a Value? ", '' );
+    switch (arg){
+        case "0":
+        case '1':
+        alert(`Zero or One`);
+        break;
+        case 3:
+        alert( 'Execution Error'); // This case will not execute because the case argument is not defind as string
+        break;
+        case `4`:
+        alert( " Four ");
+        break;
+        default:
+        alert("An unknown Value");
+    }
+</script>

@@ -1,0 +1,15 @@
+<!-- Output prime numbers -->
+<!DOCKTYPE html>
+<script>
+    'use strict';
+    let n = 10;
+    prime:
+    for (let i  = 2; i <= n; i++){
+        for ( let j = 2; j < i; j++){
+            if ( i % 2 == 0){
+                continue prime; // if No prime found, continue label prime 
+            }
+        }
+        alert( i);//Prime Number
+    }
+</script>
