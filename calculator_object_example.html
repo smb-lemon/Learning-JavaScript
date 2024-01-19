@@ -1,0 +1,37 @@
+<!-- Create a constructor function Calculator that creates objects with 3 methods:
+
+read() prompts for two values and saves them as object properties with names a and b respectively.
+sum() returns the sum of these properties.
+mul() returns the multiplication product of these properties. -->
+
+<!DOCKTYPE html>
+<script>
+    'use strict';
+    function Calculator(){
+        this.read = function(){
+            this.a = +prompt('a?','');
+            this.b = +prompt('b?','');
+            
+        };
+        this.sum = function(){
+            return this.a + this.b;
+        };
+        this.mul = function(){
+            return this.a * this.b;
+        };
+        this.div = function(){
+            return this.a/this.b;
+        };
+        this.sub = function(){
+            return this.a - this.b;
+        };
+
+    }
+    let calculator = new Calculator();
+    calculator.read();
+
+    alert("Sum" + calculator.sum());
+    alert("Multiplication" + calculator.mul());
+    alert("Subtraction" + calculator.sub());
+    alert("Division" + calculator.div());
+</script>

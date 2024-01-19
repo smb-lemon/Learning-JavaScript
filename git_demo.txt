@@ -1,1 +1,135 @@
 "This is a javascript learning practise"
+
+Keyword Description  
+ 
+async Used to indicate asynchronous
+functions
+
+await Used to wait for the result of
+asynchronous functions
+ 
+break Used to cancel multiway
+branches and loops
+ 
+ 
+case Used to define individual program
+branches in a multiway branch
+ 
+
+class Used to define classes  
+catch Used to intercept errors  
+ 
+const Used to define constants  
+
+continue Used to cancel loop iterations  
+
+debugger Used to define breakpoints in the
+program
+
+default Used to define a standard
+program branch for multiway
+branches
+ 
+
+delete Used to delete object properties  
+
+do Used to define tail-controlled
+loops
+ 
+
+else Used to define an alternative
+program branch when branching
+ 
+
+enum Reserved keyword; no function
+assigned yet
+
+export Used in connection with modules  
+extends Used to define subclasses or
+superclasses
+ 
+
+finally Used to define default behavior
+when handling errors
+ 
+
+for Used to define counting loops  
+
+function Used to define functions  
+ 
+if Used to define conditional
+statements and branches
+ 
+ 
+implements Reserved keyword 
+
+import Used in connection with modules  
+in Checks whether an object
+contains a property or a method
+ 
+
+interface Reserved keyword 
+
+instanceof Checks whether an object is an
+instance of a prototype
+ 
+let Used to define variables  
+
+new Used to create object instances  package Reserved keyword; no function
+assigned yet
+
+private Reserved keyword; no function
+assigned yet
+
+
+protected Reserved keyword; no function
+assigned yet
+
+public Reserved keyword; no function
+assigned yet
+
+return Used to define a return value of a
+function
+ 
+
+static Used to define static properties
+and methods
+ 
+super Used to access the superclass
+from a (sub)class
+ 
+switch Used to define multiway branches  
+
+this Used to access an object within
+the object itself
+
+throw Used to throw an error  
+
+try Used to define a code block in
+which errors can occur
+ 
+
+typeof Determines the type of a variable  
+
+var Used to define variables  
+
+void Reserved keyword; no function
+assigned yet
+
+
+while Used to define head-controlled
+loops
+ 
+
+with Reserved keyword; should not be
+used and is not allowed in strict
+mode, for example
+
+yield Used for generator functions  
+
+Predefined Variable Names :
+
+alert closed frames open
+blur document location screen
+close focus navigator window
+

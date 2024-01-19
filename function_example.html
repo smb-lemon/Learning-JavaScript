@@ -1,0 +1,44 @@
+<!-- Age permission  -->
+
+<!DOCKTYPE html>
+<script>
+    'use strict';
+    function checkAge(age){
+        if ( age >= 18){
+            return true;
+        }
+        else {
+            return confirm('Do you have permission from ypur parents?');
+        }
+    } 
+    let age = prompt('How old are You?', '');
+    if ( checkAge(age) ){
+        alert('Access Granted');
+    }
+    else {
+        alert('Access Denied');
+    }
+</script>
+
+<!-- 
+functions that start with "show" usually show something.
+
+Function starting with…
+
+"get…" – return a value,
+"calc…" – calculate something,
+"create…" – create something,
+"check…" – check something and return a boolean, etc.
+Examples of such names:
+
+showMessage(..)     // shows a message
+getAge(..)          // returns the age (gets it somehow)
+calcSum(..)         // calculates a sum and returns the result
+createForm(..)      // creates a form (and usually returns it)
+checkPermission(..) // checks a permission, returns true/false
+
+Ultrashort function names :
+Functions that are used very often sometimes have ultrashort names.
+For example, the jQuery framework defines a function with $. The Lodash library has its core function named _.
+These are exceptions. Generally function names should be concise and descriptive.
+ -->
