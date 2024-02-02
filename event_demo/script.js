@@ -1,3 +1,5 @@
+//Dark and Light Mode toggle from a button
+
 let modeBtn = document.querySelector("#mode");
 let currMode = "light";
 let body = document.querySelector("body");
