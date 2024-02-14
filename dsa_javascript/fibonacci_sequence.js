@@ -43,6 +43,7 @@ console.log(fibonacci(4)); //0,1,1
 // };
 
 //using recursive generator
+
 // function* fibGenerator(current = 0, next = 1) {
 //   yield current;
 //   yield* fibGenerator(next, current + next);
