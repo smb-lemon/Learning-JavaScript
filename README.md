@@ -31,6 +31,4 @@ This repository includes a set of exercises to practice your JavaScript skills
 
 Contributions to this repository are welcome! If you have any suggestions, resources, or exercises to add, please submit a pull request.
 
-## License
 
-This repository is licensed under the [MIT License](LICENSE).

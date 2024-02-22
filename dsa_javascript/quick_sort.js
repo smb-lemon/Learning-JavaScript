@@ -17,3 +17,6 @@ function quickSort(arr) {
 }
 //quickSort(arr);
 console.log(quickSort(arr));
+
+//Worst Case = O(n^2)
+//Average Case = O(nlogn)
