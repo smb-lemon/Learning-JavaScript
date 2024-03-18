@@ -9,7 +9,7 @@ function largestArr(arr){
             max = arr[i];
         }
     }
-    console.log(max - 1);
+    console.log(max);
 }
 
 largestArr(arr);
