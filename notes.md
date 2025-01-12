@@ -47,3 +47,27 @@ Select elements with methods like getElementById or QuerySelector. Add, remove o
 **Why DOM manipulation is important?**<br>
 DOM manipulation transforms static HTML pages into vibrant, user-friendly web applications. From creating dynamic form to building interactive UI components, it's an essential skill for developers.
 
+## Array
+
+**Clone an array in JavaScript**<br>
+
+**The spread operator** : <br>
+ES6 introduced the spread operator (...), which provides probably the easiest and most common way to create a shallow clone of an array.
+
+**Array.from()**<br>
+Array.from() has a very powerful API that can be used for many different things, including creating a copy of an array.
+
+**Array.prototype.slice()**<br>
+Similarly to the spread operator, Array.prototype.slice() can be used to create a shallow copy of an array.
+
+**Array.prototype.filter()**<br>
+Array.prototype.filter() can be used to return true for each and every element, resulting in a new array with all of the original array's elements.
+
+**Object.assign()**<br>
+Object.assign() can be used in the exact same way as it's used to create a clone of an object, but for an array instead.
+
+**structuredClone()**<br>
+To clone an array that contains objects, functions or class instances, we can use the structuredClone() global function, which can be used to deep clone objects.
+
+**Array.prototype.map()**<br>
+Array.prototype.map() can be used to map each element of an array to itself to create a new array.
