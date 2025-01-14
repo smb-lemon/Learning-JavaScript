@@ -71,3 +71,33 @@ To clone an array that contains objects, functions or class instances, we can us
 
 **Array.prototype.map()**<br>
 Array.prototype.map() can be used to map each element of an array to itself to create a new array.
+
+## Event loop in JavaScript
+
+**Event loop is a mechanism in JavaScript that ensures the call stack processes tasks and the Callback Queue and Microtask Queue are checked for tasks to execute**<br>
+**It keeps JavaScript non-blocking and single-theaded**
+
+*How it works?*<br>
+**JavaScript executes synchronous code in the Call Stack**<br>
+**Asynchronous tasks like setTimeOut are sent to the Web APIs**<bar>
+**Once completed their callbacks go to the Callback Queue or Microtask Queue for promises**<br>
+**The Event Loop checks if the Call Stack is empty and pushes tasks from the queues**<br>
+
+*Example*
+
+``` 
+console.log("Start");
+setTimeOut(() => {
+  console.log(""Timeout");
+},0);
+Promise.resolve().then(() => {
+  console.log("Promise")
+});
+
+console.log("End"); 
+```
+*Explanation*<br>
+
+- `console.log("Start")` and `console.log("End")` : **synchronous tasks in the call stack**<br>
+- **Promise Callback** : Goes to the Microtask Queue(Higher Priority)<br>
+- **setTimeOut Callback** : Goes to the Callback Queue(Lower Priority)
