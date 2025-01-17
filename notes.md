@@ -101,3 +101,32 @@ console.log("End");
 - `console.log("Start")` and `console.log("End")` : **synchronous tasks in the call stack**<br>
 - **Promise Callback** : Goes to the Microtask Queue(Higher Priority)<br>
 - **setTimeOut Callback** : Goes to the Callback Queue(Lower Priority)
+
+## Undefined Vs Null <br>
+
+*Undefined*<br>
+- A variable is `undefined` when it’s declared but hasn’t been assigned a value. 
+- It's automatically assigned by JavaScript that are declared but not initialized <br>
+- Undefined is of type `undefined`. <br>
+*Example:* 
+ ```
+let x; 
+console.log(x); // Output: undefined 
+```
+*Null*<br>
+- Represents the intentional absence of any object value.It's way to clear or reset a variable.<br>
+- Developers manually assign null to variables when they want to indicate that variable should not hold any value<br>
+- Despite being an empty value, null is of type object <br>
+*Example :*
+```
+let y = null; 
+console.log(y); // Output: null 
+```
+**Key Differences:** 
+- Type: `undefined` is a type itself, while `null` is an object. 
+- Intent: Use `null` to explicitly clear a value. `undefined` signals an uninitialized variable. 
+- Equality: 
+ ```
+console.log(null == undefined); // true (loose equality) 
+console.log(null === undefined); // false (strict equality) 
+```
