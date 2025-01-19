@@ -130,3 +130,36 @@ console.log(y); // Output: null
 console.log(null == undefined); // true (loose equality) 
 console.log(null === undefined); // false (strict equality) 
 ```
+## setTimeOut function<br>
+setTimeOut() is a javascript function that allows us to execute a piece of code or a function after a specific delay(ms).
+Basically it's a way to schedule task which will run in later or in future.<br>
+*Syntax*<br>
+`setTimeOut(function,delay)`<br>
+*Example*<br>
+```
+function greet(){
+  console.log("Hello");
+}
+setTimeOut(greet, 2000);
+```
+**Inline Function**<br>
+```
+setTimeOut(function(){
+  console.log("Hello");
+},2000);
+```
+**setTimeOut() with parameter**
+```
+function greet(name){
+  console.log(`Hello, ${name}`);
+}
+setTimeOut(greet, 2000, lemon);
+```
+**Clearing a TimeOut**<br>
+```
+let timeOutId = setTimeOut(()=>{
+  console.log("hello world");
+}, 3000);
+clearTimeout(timeOutId);
+console.log("Timeout cleared")
+```
