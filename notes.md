@@ -1,5 +1,10 @@
 # JavaScript Notes
 
+**{
+} This means a block of code** <br>
+
+
+
 ## Mutable Vs Immutable
 
 ### Mutable
@@ -47,6 +52,35 @@ Select elements with methods like getElementById or QuerySelector. Add, remove o
 **Why DOM manipulation is important?**<br>
 DOM manipulation transforms static HTML pages into vibrant, user-friendly web applications. From creating dynamic form to building interactive UI components, it's an essential skill for developers.
 
+**Width/height of the document** <br>
+Theoretically, as the root document element is document. documentElement, and it encloses all the content, we could measure the document’s full size as document.`documentElement.scrollWidth/scrollHeight`.
+
+But on that element, for the whole page, these properties do not work as intended. In Chrome/Safari/Opera, if there’s no scroll, then `documentElement.scrollHeight` may be even less than `documentElement.clientHeight`! Weird, right?
+
+To reliably obtain the full document height, we should take the maximum of these properties:
+```js
+let scrollHeight = Math.max(
+  document.body.scrollHeight, document.documentElement.scrollHeight,
+  document.body.offsetHeight, document.documentElement.offsetHeight,
+  document.body.clientHeight, document.documentElement.clientHeight
+);
+alert('Full document height, with scrolled out part: ' + scrollHeight);
+```
+These inconsistencies come from ancient times, not a “smart” logic.
+
+**Get the current scroll** <br>
+DOM elements have their current scroll state in their `scrollLeft/scrollTop` properties.
+
+For document scroll, `document.documentElement.scrollLeft/scrollTop` works in most browsers, except older WebKit-based ones, like Safari (bug 5991), where we should use `document.body` instead of `document.documentElement`.
+
+Luckily, we don’t have to remember these peculiarities at all, because the scroll is available in the special properties, 
+```js
+window.pageXOffset/pageYOffset:`
+
+alert('Current scroll from the top: ' + window.pageYOffset);
+alert('Current scroll from the left: ' + window.pageXOffset);
+```
+These properties are read-only.
 ## Array
 
 **Clone an array in JavaScript**<br>
