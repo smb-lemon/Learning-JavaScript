@@ -81,6 +81,19 @@ alert('Current scroll from the top: ' + window.pageYOffset);
 alert('Current scroll from the left: ' + window.pageXOffset);
 ```
 These properties are read-only.
+
+**Traversing the DOM** <br>
+- parentElement – Gets the parent.
+- children – Gets child elements.
+- firstElementChild / .lastElementChild – Gets the first/last child.
+- nextElementSibling / .previousElementSibling – Gets siblings.
+```js
+let parent = title.parentElement;
+let children = parent.children;
+let firstChild = parent.firstElementChild;
+let lastChild = parent.lastElementChild;
+let nextSibling = title.nextElementSibling;
+```
 ## Array
 
 **Clone an array in JavaScript**<br>
